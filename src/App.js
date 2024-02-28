@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="column">
+          <p>10</p>
+          <div className="bar" style={{ height: `${(10 / 12) * 100}%` }}></div>
+        </div>
+        <div className="column">
+          <p>6</p>
+          <div className="bar" style={{ height: `${(6 / 12) * 100}%` }}></div>
+        </div>
+        <div className="column">
+          <p>8</p>
+          <div className="bar" style={{ height: `${(8 / 12) * 100}%` }}></div>
+        </div>
+        <div className="column">
+          <p>9</p>
+          <div className="bar" style={{ height: `${(9 / 12) * 100}%` }}></div>
+        </div>
+        <div className="column">
+          <p>12</p>
+          <div className="bar" style={{ height: `${(12 / 12) * 100}%` }}></div>
+        </div>
+      </div>
     </div>
   );
 }
